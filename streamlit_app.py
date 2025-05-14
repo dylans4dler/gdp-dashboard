@@ -64,7 +64,7 @@ gdp_df = get_gdp_data()
 
 # Set the title that appears at the top of the page.
 '''
-# :earth_americas: GDP dashboard
+# :earth_americas: This is test Blanc
 
 Browse GDP data from the [World Bank Open Data](https://data.worldbank.org/) website. As you'll
 notice, the data only goes to 2022 right now, and datapoints for certain years are often missing.
@@ -74,6 +74,8 @@ But it's otherwise a great (and did I mention _free_?) source of data.
 # Add some spacing
 ''
 ''
+
+st.image('PIE.png')
 
 min_value = gdp_df['Year'].min()
 max_value = gdp_df['Year'].max()
