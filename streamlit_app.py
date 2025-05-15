@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import math
 from pathlib import Path
+from streamlit_carousel import carousel
 
 # Set the title and favicon that appear in the Browser's tab bar.
 st.set_page_config(
@@ -74,8 +75,15 @@ But it's otherwise a great (and did I mention _free_?) source of data.
 # Add some spacing
 ''
 ''
+test_item = [dict(title='',
+                  text='',
+                  img='PIE.png'),
 
-st.image('PIE.png')
+             dict(title='',
+                  text='',
+                  img='PIE.png')]
+
+carousel(items=test_item)
 
 min_value = gdp_df['Year'].min()
 max_value = gdp_df['Year'].max()
